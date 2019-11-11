@@ -6,14 +6,18 @@ using System.Threading.Tasks;
 
 namespace calculadorapooo
 {
+
     class Calculadora
     {
-        public string add()
-        {
-            set
-                {
-
+        private string visor = "";
+            public string input
+            {
+                set { visor = value; }
             }
-        }    
+
+            public string output
+            {
+                get { return visor; }
+            }  
     }
 }

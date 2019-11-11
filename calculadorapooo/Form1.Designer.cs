@@ -222,6 +222,7 @@
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(47, 33);
             this.button10.TabIndex = 5;
+            this.button10.Tag = "V";
             this.button10.Text = " ";
             this.button10.UseVisualStyleBackColor = false;
             this.button10.Click += new System.EventHandler(this.clicar);

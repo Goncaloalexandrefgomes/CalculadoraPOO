@@ -12,6 +12,8 @@ namespace calculadorapooo
 {
     public partial class Form1 : Form
     {
+
+        Calculadora casio = new Calculadora();
         public Form1()
         {
             InitializeComponent();
@@ -19,8 +21,8 @@ namespace calculadorapooo
 
         private void clicar(object sender, EventArgs e)
         {
-            Calculadora.add((Button)sender).Tag.ToString();
-            label1.text = Calculadora.screen;
+            casio.input = ((Button)sender).Tag.ToString();
+            label1.Text = casio.output;
         }
     }
 }
