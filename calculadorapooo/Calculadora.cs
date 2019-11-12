@@ -10,14 +10,48 @@ namespace calculadorapooo
     class Calculadora
     {
         private string visor = "";
-            public string input
-            {
-                set { visor = value; }
-            }
 
-            public string output
+        public Calculadora()
+        {
+            this.visor = "";
+        }
+
+            public string input
+        {
+            set
             {
-                get { return visor; }
-            }  
+                if (visor == "") visor = "0";
+                switch (value)
+                {
+                    case "OFF": visor = ""; break;
+                    case "AC": visor = "0"; break;
+                    case "C": visor = "0"; break;
+                    case "MC":; break;
+                    case "MR":; break;
+                    case "M-":; break;
+                    case "M+":; break;
+                    case "v":; break;
+                    case "%":; break;
+                    case "+/-":; break;
+                    case "/":
+                    case "x":
+                    case "-":
+                    case "+":
+                    case "=":; break;
+                    case ",": if (!visor.Contains(",")) visor += ","; break;
+                    default: visor += value; break;
+                    
+
+                }
+            }
+        }
+
+        public string output
+        {
+            get
+            {
+                return (visor.Length > 9) ? visor.Substring(0, 9) : visor;
+            }
+        }
     }
 }
