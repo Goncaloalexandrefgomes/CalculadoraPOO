@@ -33,7 +33,7 @@ namespace calculadorapooo
                     case "M-": mem -= ecra; break;
                     case "M+": mem += ecra; break;
                     case "√": visor = Math.Sqrt(ecra).ToString(); break;
-                    case "%":; break;
+                    case "%": visor = (anterior * ecra / 100).ToString(); break;
                     case "+/-": visor = (-ecra).ToString(); break;
                     case "/":
                     case "*":
