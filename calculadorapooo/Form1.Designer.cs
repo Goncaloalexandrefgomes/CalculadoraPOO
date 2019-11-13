@@ -55,6 +55,7 @@
             this.button25 = new System.Windows.Forms.Button();
             this.button26 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.memory = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -222,7 +223,7 @@
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(47, 33);
             this.button10.TabIndex = 5;
-            this.button10.Tag = "V";
+            this.button10.Tag = "√";
             this.button10.Text = " ";
             this.button10.UseVisualStyleBackColor = false;
             this.button10.Click += new System.EventHandler(this.clicar);
@@ -503,12 +504,20 @@
             // 
             this.label1.BackColor = System.Drawing.Color.PowderBlue;
             this.label1.Font = new System.Drawing.Font("OCR A Extended", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(225, 171);
+            this.label1.Location = new System.Drawing.Point(229, 174);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(259, 87);
+            this.label1.Size = new System.Drawing.Size(248, 83);
             this.label1.TabIndex = 26;
-            this.label1.Text = "label1";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // memory
+            // 
+            this.memory.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.memory.Location = new System.Drawing.Point(233, 174);
+            this.memory.Name = "memory";
+            this.memory.Size = new System.Drawing.Size(88, 23);
+            this.memory.TabIndex = 27;
+            this.memory.Text = "memory";
             // 
             // Form1
             // 
@@ -517,6 +526,7 @@
             this.BackgroundImage = global::calculadorapooo.Properties.Resources.calculadora_de_bolso_casio_sx_300_w_dp_8_digitos_solar_e_bateria_preta_10488_1_20180612141938;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(704, 682);
+            this.Controls.Add(this.memory);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button26);
             this.Controls.Add(this.button21);
@@ -546,6 +556,7 @@
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
@@ -579,6 +590,7 @@
         private System.Windows.Forms.Button button25;
         private System.Windows.Forms.Button button26;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label memory;
     }
 }
 
